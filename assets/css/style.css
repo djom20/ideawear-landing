@@ -1,41 +1,4 @@
 /* Your style here */
+@import url("http://fonts.googleapis.com/css?family=Lato:700");
 body {
-	overflow-x: hidden;
-}
-
-@import url('http://fonts.googleapis.com/css?family=Lato:700');
-
-.background {
-	background: #348cb2 url("https://dl.dropboxusercontent.com/u/57960869/Altiviaot/wallpaper.jpg") bottom left;
-	background-repeat: repeat-x;
-	height: 100%;
-	left: 0;
-	opacity: 1;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
-
-a, a:hover, a:visited {
-	color: #fff;
-}
-
-.content {
-	margin: 150px 0;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-	color: #fff !important;
-	margin-bottom: 0;
-}
-
-.text-center{
-	text-align: center;
-}
-
-@media (max-width: 450px) {
-	.content {
-		margin: 40px 0;
-	}
-}
+  overflow-x: hidden; }

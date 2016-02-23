@@ -1,0 +1,24 @@
+{
+    "name": "Base Proyect AngularJs",
+    "homepage": "https://github.com/djom20/baseProject_angular",
+    "authors": [
+        "Ing. Jonathan Olier <djom202@gmail.com>"
+    ],
+    "description": "",
+    "main": "index.html",
+    "moduleType": [],
+    "keywords": [
+        "base",
+        "project",
+        "angularjs"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
