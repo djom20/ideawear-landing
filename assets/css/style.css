@@ -1,29 +1,71 @@
 /* Your style here */
-@import url("http://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
 body {
   overflow-x: hidden; }
 
-body {
-  padding-top: 70px; }
-
-#landing * {
-  display: block;
-  position: relative; }
-#landing .navbar {
-  background-color: #fff; }
-#landing .slide .indicators li {
-  background-color: black \9;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  border: 1px solid #fff;
-  cursor: pointer;
-  display: inline-block;
-  height: 10px;
-  margin: 1px;
-  text-indent: -999px;
-  width: 10px; }
-  #landing .slide .indicators li .active {
+#landing {
+  padding-top: 80px; }
+  #landing .navbar {
     background-color: #fff;
-    height: 12px;
-    margin: 0;
-    width: 12px; }
+    background-image: none;
+    box-shadow: none; }
+    #landing .navbar .navbar-brand {
+      display: table;
+      padding-top: 20px; }
+  #landing .navbar-nav li a {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  #landing .slide .indicators li {
+    background-color: black \9;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 10px; }
+    #landing .slide .indicators li .active {
+      background-color: #fff;
+      height: 12px;
+      margin: 0;
+      width: 12px; }
+  #landing .videos {
+    padding: 20px 0; }
+    #landing .videos .options {
+      margin: 0;
+      margin-bottom: 15px; }
+      #landing .videos .options form {
+        padding-left: 0; }
+        #landing .videos .options form input {
+          border-radius: 20px; }
+      #landing .videos .options .filter {
+        float: right;
+        padding-right: 15px;
+        width: 20%; }
+        #landing .videos .options .filter p {
+          float: left;
+          margin-bottom: 0;
+          padding-right: 16px;
+          padding-top: 8px; }
+        #landing .videos .options .filter select {
+          border: 0;
+          box-shadow: none;
+          float: right;
+          width: 55%; }
+  #landing footer {
+    background-image: url("../img/background-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 30px 0; }
+    #landing footer ul {
+      display: inline-block;
+      list-style: none;
+      width: 33%; }
+      #landing footer ul li {
+        float: left; }
+        #landing footer ul li a {
+          padding: 0 30px; }

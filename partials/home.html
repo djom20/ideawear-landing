@@ -1,6 +1,6 @@
 <div id="landing">
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  	<div class="container-fluid">
+	  	<div class="container">
 	    	<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -8,7 +8,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-	      		<a class="navbar-brand" href="#">Brand</a>
+	      		<a class="navbar-brand" href="#">
+        			<img alt="Brand" src="assets/img/logo.png">
+      			</a>
 	    	</div>
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      		<ul class="nav navbar-nav navbar-right">
@@ -28,7 +30,7 @@
 			<li data-slide-to="3"><a href="#"></a></li>
 		</ol>
 	</div>
-	<div class="content">
+	<div class="content container">
 		<h1>Lorem Ipsum dolor</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -37,13 +39,23 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
-	<div class="videos">
-		<div class="filters row">
+	<div class="videos container">
+		<div class="options row">
 			<form class="navbar-form navbar-left" role="search">
   				<div class="form-group">
     				<input type="text" class="form-control" placeholder="Search">
   				</div>
 			</form>
+			<div class="filter">
+				<p>Filter by:</p>
+				<select class="form-control">
+					<option>Animation</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
 		</div>
 		<div class="list-videos">
 			<div class="row">
@@ -82,13 +94,15 @@
 			</div>
 		</div>
 	</div>
-	<footer class="row">
-		<small>Contact Us</small>
-		<p>contact@ideawear.co</p>
-		<ul>
-			<li><a href="#">facebook</a></li>
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">youtube</a></li>
-		</ul>
-	<footer>
+	<footer class="row text-center">
+		<div class="container">
+			<small>Contact Us</small>
+			<p>contact@ideawear.co</p>
+			<ul class="clearfix">
+				<li><a href="https://facebook.com"><img alt="Facebook" src="assets/img/icon-facebook.png"></a></li>
+				<li><a href="https://twitter.com"><img alt="Twitter" src="assets/img/icon-twitter.png"></a></li>
+				<li><a href="https://youtube.com"><img alt="Youtube" src="assets/img/icon-youtube.png"></a></li>
+			</ul>
+		</div>
+	</footer>
 </div>

@@ -4,17 +4,26 @@ body {
     overflow-x: hidden;
 }
 
-@import url('http://fonts.googleapis.com/css?family=Lato:700');
-
-body { padding-top: 70px; }
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
 
 #landing {
-	* {
-		display: block;
-		position:relative;
-	}
+    padding-top: 80px;
 	.navbar{
 		background-color: #fff;
+		background-image: none;
+		box-shadow: none;
+		.navbar-brand {
+		    display: table;
+    		padding-top: 20px;
+		}
+	}
+	.navbar-nav {
+		li {
+			a {
+		    	padding-top: 30px;
+		    	padding-bottom: 30px;
+		    }
+		}
 	}
 	.slide{
 		.indicators {
@@ -41,10 +50,53 @@ body { padding-top: 70px; }
 	.content {
 
 	}
-	.videos{
-
+	.videos {
+		padding: 20px 0;
+		.options {
+			margin: 0;
+			margin-bottom: 15px;
+			form {
+			    padding-left: 0;
+			    input {
+			        border-radius: 20px;
+			    }
+			}
+			.filter {
+				float: right;
+				padding-right: 15px;
+				width: 20%;
+				p {
+					float: left;
+					margin-bottom: 0;
+					padding-right: 16px;
+					padding-top: 8px;
+				}
+				select {
+					border: 0;
+					box-shadow: none;
+					float: right;
+					width: 55%;
+				}
+			}
+		}
 	}
-	footer{
-
+	footer {
+		background-image: url('../img/background-footer.jpg');
+		background-repeat: no-repeat;
+    	background-size: 100% 100%;
+		color: #fff;
+		text-transform: lowercase;
+		padding: 30px 0;
+		ul {
+			display: inline-block;
+			list-style: none;
+			width: 33%;
+			li {
+			    float: left;
+			    a {
+			        padding: 0 30px;
+			    }
+			}
+		}
 	}
 }
