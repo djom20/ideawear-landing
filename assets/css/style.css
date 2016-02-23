@@ -2,3 +2,28 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:700");
 body {
   overflow-x: hidden; }
+
+body {
+  padding-top: 70px; }
+
+#landing * {
+  display: block;
+  position: relative; }
+#landing .navbar {
+  background-color: #fff; }
+#landing .slide .indicators li {
+  background-color: black \9;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  width: 10px; }
+  #landing .slide .indicators li .active {
+    background-color: #fff;
+    height: 12px;
+    margin: 0;
+    width: 12px; }

@@ -7,7 +7,7 @@ App.config(['$routeProvider', '$httpProvider', '$locationProvider' ,
 
         //Remove the header used to identify ajax call  that would prevent CORS from working
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
-        
+
         // Use x-www-form-urlencoded Content-Type
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
@@ -48,27 +48,11 @@ App.config(['$routeProvider', '$httpProvider', '$locationProvider' ,
                 return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
             }
         ];
-        
+
         $routeProvider
             .when('/', {
                 templateUrl: 'partials/home.html',
                 controller: 'HomeCtrl'
-            })
-            .when('/te-quiero-verde', {
-                templateUrl: 'partials/te-quiero-verde.html',
-                controller: 'TeQuieroVerdeCtrl'
-            })
-            .when('/corazon-curioso', {
-                templateUrl: 'partials/corazon-curioso.html',
-                controller: 'CorazonCuriosoCtrl'
-            })
-            .when('/buen-latido', {
-                templateUrl: 'partials/buen-latido.html',
-                controller: 'BuenLatidoCtrl'
-            })
-            .when('/cora-zona', {
-                templateUrl: 'partials/cora-zona.html',
-                controller: 'CoraZonaCtrl'
             })
             .otherwise({
                 redirectTo: '/'

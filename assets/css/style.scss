@@ -5,3 +5,46 @@ body {
 }
 
 @import url('http://fonts.googleapis.com/css?family=Lato:700');
+
+body { padding-top: 70px; }
+
+#landing {
+	* {
+		display: block;
+		position:relative;
+	}
+	.navbar{
+		background-color: #fff;
+	}
+	.slide{
+		.indicators {
+			li{
+				background-color: #000\9;
+				background-color: rgba(0,0,0,0);
+				border-radius: 10px;
+				border: 1px solid #fff;
+				cursor: pointer;
+				display: inline-block;
+				height: 10px;
+				margin: 1px;
+				text-indent: -999px;
+				width: 10px;
+				.active {
+					background-color: #fff;
+					height: 12px;
+					margin: 0;
+					width: 12px;
+				}
+			}
+		}
+	}
+	.content {
+
+	}
+	.videos{
+
+	}
+	footer{
+
+	}
+}

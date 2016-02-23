@@ -1,1 +1,1 @@
-# baseProject_angular
+# Ideawear Landing Page
