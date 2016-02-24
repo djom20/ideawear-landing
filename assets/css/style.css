@@ -108,6 +108,9 @@ body {
           font-weight: 700;
           padding: 6px 0;
           width: 50%; }
+          @media screen and (max-width: 460px) {
+            #landing .videos .options .filter select {
+              width: 60%; } }
     #landing .videos .list-videos .vd {
       margin-bottom: 15px; }
   #landing footer {
