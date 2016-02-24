@@ -1,10 +1,18 @@
+/* BREAKPOINTS */
+/* MINIX */
 /* Your style here */
-@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=latin,latin-ext);
 body {
   overflow-x: hidden; }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1109px; } }
 #landing {
   padding-top: 80px; }
+  @media screen and (max-width: 768px) {
+    #landing .navbar-default .navbar-toggle {
+      margin-top: 24px; } }
   #landing .navbar {
     background-color: #fff;
     background-image: none;
@@ -16,8 +24,8 @@ body {
     padding-top: 30px;
     padding-bottom: 30px; }
   #landing .slide .indicators li {
-    background-color: black \9;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #000 \9;
+    background-color: transparent;
     border-radius: 10px;
     border: 1px solid #fff;
     cursor: pointer;
@@ -31,41 +39,100 @@ body {
       height: 12px;
       margin: 0;
       width: 12px; }
+  #landing .content {
+    padding: 0;
+    margin-bottom: 120px; }
+    @media screen and (max-width: 768px) {
+      #landing .content {
+        padding-left: 15px;
+        padding-right: 15px; } }
+    #landing .content h1,
+    #landing .content p {
+      color: #4a4a4a;
+      font-family: 'Roboto', sans-serif; }
+    #landing .content h1 {
+      color: #616161;
+      font-size: 24.29px;
+      font-weight: 700; }
+    #landing .content p {
+      color: #4a4a4a;
+      font-size: 12.15px;
+      font-weight: 100;
+      line-height: 24px; }
   #landing .videos {
-    padding: 20px 0; }
+    margin-bottom: 20px; }
     #landing .videos .options {
       margin: 0;
-      margin-bottom: 15px; }
+      margin-bottom: 65px; }
       #landing .videos .options form {
         padding-left: 0; }
-        #landing .videos .options form input {
-          border-radius: 20px; }
+        @media screen and (max-width: 768px) {
+          #landing .videos .options form {
+            padding-left: 15px; } }
+        #landing .videos .options form .form-group {
+          position: relative; }
+          #landing .videos .options form .form-group .glyphicon {
+            color: #919191;
+            left: 15px;
+            position: absolute;
+            top: 9px; }
+          #landing .videos .options form .form-group input {
+            font-family: 'Roboto', sans-serif;
+            border-radius: 20px;
+            padding-left: 35px;
+            width: 400px; }
+            @media screen and (max-width: 768px) {
+              #landing .videos .options form .form-group input {
+                width: 100%; } }
       #landing .videos .options .filter {
+        color: #4a4a4a;
         float: right;
-        padding-right: 15px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 12px;
         width: 20%; }
+        @media screen and (max-width: 768px) {
+          #landing .videos .options .filter {
+            width: 50%; } }
         #landing .videos .options .filter p {
-          float: left;
+          float: right;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
           margin-bottom: 0;
-          padding-right: 16px;
+          padding-right: 2px;
           padding-top: 8px; }
         #landing .videos .options .filter select {
           border: 0;
           box-shadow: none;
           float: right;
-          width: 55%; }
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          padding: 6px 0;
+          width: 50%; }
+    #landing .videos .list-videos .vd {
+      margin-bottom: 15px; }
   #landing footer {
     background-image: url("../img/background-footer.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #fff;
-    text-transform: lowercase;
-    padding: 30px 0; }
+    padding: 90px 0; }
+    #landing footer small {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 100; }
+    #landing footer p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24.29px;
+      margin-bottom: 50px;
+      text-transform: lowercase;
+      font-weight: 700; }
     #landing footer ul {
       display: inline-block;
       list-style: none;
-      width: 33%; }
+      padding: 0; }
       #landing footer ul li {
         float: left; }
         #landing footer ul li a {
-          padding: 0 30px; }
+          padding: 0 10px; }
+
+/*# sourceMappingURL=style.css.map */
