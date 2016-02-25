@@ -9,4 +9,4 @@
 About
 ======
 
-Se realizo una landing page en la que te permite realizar búsquedas de vídeos por medio de la API de Youtube.
+It created a landing page, that allows you to search for videos via Youtube API Js v3.

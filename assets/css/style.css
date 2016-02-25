@@ -23,22 +23,107 @@ body {
   #landing .navbar-nav li a {
     padding-top: 30px;
     padding-bottom: 30px; }
-  #landing .slide .indicators li {
-    background-color: #000 \9;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    cursor: pointer;
-    display: inline-block;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    width: 10px; }
-    #landing .slide .indicators li .active {
-      background-color: #fff;
-      height: 12px;
+  #landing .slider {
+    position: relative;
+    height: 700px; }
+    @media screen and (max-width: 768px) {
+      #landing .slider {
+        min-height: 200px;
+        height: 300px; } }
+    #landing .slider ul {
+      list-style: none;
+      margin-bottom: 110px;
+      padding: 0;
+      position: relative;
+      text-align: center; }
+      #landing .slider ul li {
+        display: none;
+        position: relative; }
+        #landing .slider ul li img {
+          width: 100%; }
+        #landing .slider ul li h2 {
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-size: 32.6px;
+          font-weight: 700;
+          position: absolute;
+          top: 10%;
+          width: 100%; }
+          #landing .slider ul li h2 span {
+            font-weight: 100; }
+          @media screen and (max-width: 768px) {
+            #landing .slider ul li h2 {
+              top: 5%; } }
+          @media screen and (max-width: 460px) {
+            #landing .slider ul li h2 {
+              top: -3px;
+              font-size: 21.6px; } }
+          @media screen and (max-width: 320px) {
+            #landing .slider ul li h2 {
+              font-size: 15px;
+              top: -5px; } }
+        #landing .slider ul li small {
+          color: #fff;
+          font-family: 'Roboto', sans-serif;
+          font-size: 12px;
+          font-weight: 100;
+          left: 0;
+          position: absolute;
+          top: 45px;
+          width: 100%; }
+          @media screen and (max-width: 300px) {
+            #landing .slider ul li small {
+              top: 16px; } }
+          @media screen and (max-width: 350px) {
+            #landing .slider ul li small {
+              margin-top: 10px; } }
+          @media screen and (max-width: 450px) {
+            #landing .slider ul li small {
+              top: 30px; } }
+          @media screen and (max-width: 460px) {
+            #landing .slider ul li small {
+              top: 20px; } }
+          @media screen and (max-width: 768px) {
+            #landing .slider ul li small {
+              top: 40px; } }
+        #landing .slider ul li.active {
+          display: block; }
+    #landing .slider ol.bullets {
       margin: 0;
-      width: 12px; }
+      padding: 0;
+      position: absolute;
+      right: 10px;
+      top: 25%; }
+      @media screen and (max-width: 768px) {
+        #landing .slider ol.bullets {
+          top: 20%; } }
+      #landing .slider ol.bullets li {
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        display: block;
+        height: 15px;
+        margin: 1px;
+        margin-bottom: 15px;
+        text-indent: -999px;
+        width: 15px; }
+        @media screen and (max-width: 768px) {
+          #landing .slider ol.bullets li {
+            margin-bottom: 8px;
+            height: 10px;
+            width: 10px; } }
+        #landing .slider ol.bullets li.active, #landing .slider ol.bullets li:hover {
+          background-color: #fff;
+          height: 17px;
+          margin: 0;
+          margin-bottom: 15px;
+          width: 17px; }
+          @media screen and (max-width: 768px) {
+            #landing .slider ol.bullets li.active, #landing .slider ol.bullets li:hover {
+              height: 12px;
+              margin-bottom: 8px;
+              width: 12px; } }
   #landing .content {
     padding: 0;
     margin-bottom: 120px; }
@@ -46,11 +131,11 @@ body {
       #landing .content {
         padding-left: 15px;
         padding-right: 15px; } }
-    #landing .content h1,
+    #landing .content h2,
     #landing .content p {
       color: #4a4a4a;
       font-family: 'Roboto', sans-serif; }
-    #landing .content h1 {
+    #landing .content h2 {
       color: #616161;
       font-size: 24.29px;
       font-weight: 700; }
@@ -113,6 +198,46 @@ body {
               width: 60%; } }
     #landing .videos .list-videos .vd {
       margin-bottom: 15px; }
+    #landing .videos .list-videos .preload {
+      text-align: center;
+      width: 78px;
+      height: 49px;
+      margin: auto; }
+      #landing .videos .list-videos .preload span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        margin: 24px auto;
+        background: black;
+        border-radius: 49px;
+        -o-border-radius: 49px;
+        -ms-border-radius: 49px;
+        -webkit-border-radius: 49px;
+        -moz-border-radius: 49px;
+        animation: bubblingG 1.5s infinite alternate;
+        -o-animation: bubblingG 1.5s infinite alternate;
+        -ms-animation: bubblingG 1.5s infinite alternate;
+        -webkit-animation: bubblingG 1.5s infinite alternate;
+        -moz-animation: bubblingG 1.5s infinite alternate; }
+      #landing .videos .list-videos .preload #bubblingG_1 {
+        animation-delay: 0s;
+        -o-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s; }
+      #landing .videos .list-videos .preload #bubblingG_2 {
+        animation-delay: 0.45s;
+        -o-animation-delay: 0.45s;
+        -ms-animation-delay: 0.45s;
+        -webkit-animation-delay: 0.45s;
+        -moz-animation-delay: 0.45s; }
+      #landing .videos .list-videos .preload #bubblingG_3 {
+        animation-delay: 0.9s;
+        -o-animation-delay: 0.9s;
+        -ms-animation-delay: 0.9s;
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s; }
   #landing footer {
     background-image: url("../img/background-footer.jpg");
     background-repeat: no-repeat;
@@ -137,5 +262,61 @@ body {
         float: left; }
         #landing footer ul li a {
           padding: 0 10px; }
+
+@keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    transform: translateY(0); }
+  100% {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    transform: translateY(-20px); } }
+@-o-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    -o-transform: translateY(0); }
+  100% {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    -o-transform: translateY(-20px); } }
+@-ms-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    -ms-transform: translateY(0); }
+  100% {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    -ms-transform: translateY(-20px); } }
+@-webkit-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    -webkit-transform: translateY(0); }
+  100% {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    -webkit-transform: translateY(-20px); } }
+@-moz-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    -moz-transform: translateY(0); }
+  100% {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    -moz-transform: translateY(-20px); } }
 
 /*# sourceMappingURL=style.css.map */

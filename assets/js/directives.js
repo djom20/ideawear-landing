@@ -13,9 +13,6 @@ Appd.directive('youtube', function($window) {
         link: function(scope, element) {
             var player = null;
 
-            // $window.onYouTubeIframeAPIReady = function() {
-            console.log('Ready API youtube');
-
             player = new YT.Player(element.children()[0], {
                 playerVars: {
                     autoplay: 0,
@@ -27,13 +24,12 @@ Appd.directive('youtube', function($window) {
                     iv_load_policy: 3,
                     showinfo: 1,
                     controls: 1,
-                    origin: 'https://ideawear-landing.firebaseapp.com/',
+                    origin: 'ideawear-landing.firebaseapp.com',
                     // listType: search
                 },
                 videoId: scope.videoid,
                 class: scope.class
             });
-            // }
         },
     }
 });
