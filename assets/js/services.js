@@ -14,9 +14,7 @@ Apps.service('youtubeService', ['$http', '$q', function($http, $q) {
                 _gapi = gapi;
             }
         } catch (err) {
-            setTimeout(function() {
-                initService();
-            }, 2000);
+            console.log('Error, no se cargo la libreria de la api de Google.')
         }
     };
 
@@ -25,6 +23,7 @@ Apps.service('youtubeService', ['$http', '$q', function($http, $q) {
             _gapi.client.load('youtube', 'v3', function() {
                 if (_request != null) {
                     _request = null;
+                    _deferred = $q.defer();
                 }
 
                 _request = _gapi.client.youtube.search.list({
@@ -36,17 +35,15 @@ Apps.service('youtubeService', ['$http', '$q', function($http, $q) {
 
                 _request.execute(function(resp) {
                     _deferred.resolve(resp.result);
-                    console.log('resp', resp);
-                    console.log('result', resp.result);
-                    console.log('_deferred', _deferred.promise);
+                    console.info('resp', resp);
+                    console.info('result', resp.result);
+                    console.info('_deferred', _deferred.promise);
                 });
 
                 $callback(_deferred.promise);
             });
         } catch (err) {
-            setTimeout(function() {
-                initService();
-            }, 2000);
+            console.log('Error, no se cargo la libreria de la api de Google.')
         }
     };
 

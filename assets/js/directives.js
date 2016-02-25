@@ -24,8 +24,7 @@ Appd.directive('youtube', function($window) {
                     iv_load_policy: 3,
                     showinfo: 1,
                     controls: 1,
-                    origin: 'ideawear-landing.firebaseapp.com',
-                    // listType: search
+                    origin: 'https://ideawear-landing.firebaseapp.com'
                 },
                 videoId: scope.videoid,
                 class: scope.class

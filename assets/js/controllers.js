@@ -2,19 +2,16 @@ var Appc = angular.module('Controllers', []);
 
 Appc.controller('HomeCtrl', ['$scope', '$http', '$location', 'youtubeService',
     function($scope, $http, $location, $youtube) {
-        console.log("Init Controller HomeCtrl");
-
         $scope.listVideo = {};
 
-        $scope.initGapi = function() {
+        window.initGapi = function() {
             $youtube.initService();
-            $scope.search('AngularJs');
+            $scope.search('Dogs');
         };
 
         $scope.changeTextbySearch = function(str) {
-            console.log(str);
-
             $scope.listVideo = {};
+            $youtube.initService();
             $scope.search(str);
         };
 
@@ -31,7 +28,5 @@ Appc.controller('HomeCtrl', ['$scope', '$http', '$location', 'youtubeService',
                 });
             });
         };
-
-        $scope.initGapi();
     }
 ]);

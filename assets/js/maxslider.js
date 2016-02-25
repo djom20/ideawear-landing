@@ -16,14 +16,12 @@ $(function() {
 
             if (numChild > 0) {
                 for (var i = 1; i <= numChild; i++) {
-                    console.info('create item#' + i);
                     bullets.append(
                         $('<li/>', {
                             'class': (i == 1) ? 'active' : ''
                         }).attr('data-slide-to', i).click(function(e) {
                             e.preventDefault();
-                            console.info('click bullet', $(this).data('slide-to'));
-                            changeSlide();
+                            ind = changeSlide($(this).data('slide-to'));
                         })
                     );
                 }
@@ -31,8 +29,6 @@ $(function() {
                 $this.append(
                     bullets
                 );
-
-                console.info('insert bullets', bullets);
 
                 // AutoRotate
                 setInterval(function() {
@@ -47,9 +43,6 @@ $(function() {
             var next = currentPos + 1,
                 pos = (next > limit) ? 1 : next;
 
-            console.info('next', next);
-            console.info('pos', pos);
-
             $this.find('li').removeClass('active');
             $this.find('li:nth-child(' + pos + ')').addClass('active');
 
@@ -60,8 +53,15 @@ $(function() {
             return pos;
         }
 
-        function changeSlide() {
-            console.log('changeSlide');
+        function changeSlide(_pos) {
+            $this.find('li').removeClass('active');
+            $this.find('li:nth-child(' + _pos + ')').addClass('active');
+
+            $this.find('ul').animate({
+                'margin-left': -(_pos * $this.width() + 'px')
+            });
+
+            return _pos;
         }
 
         init();
