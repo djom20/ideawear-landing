@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jasmine-expect": "^2.0.2",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-ng-scenario": "^0.1.0"
+  }
+}
