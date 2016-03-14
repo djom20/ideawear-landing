@@ -18,17 +18,17 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'libs/jquery/jquery-1.11.0.js',
-            'node_modules/karma-ng-scenario/lib/angular-scenario.js',
-            'node_modules/angular-mocks/angular-mocks.js',
-            'libs/angular/angular-route.min.js',
-            'libs/angular/angular-route.min.js.map',
-            'libs/firebase/firebase.js',
-            'libs/firebase/angularfire.min.js',
+            '../node_modules/karma-ng-scenario/lib/angular-scenario.js',
+            '../node_modules/angular-mocks/angular-mocks.js',
+            '../libs/angular/angular-route.min.js',
+            '../libs/angular/angular-route.min.js.map',
+            '../libs/firebase/firebase.js',
+            '../libs/firebase/angularfire.min.js',
             'http://apis.google.com/js/client.js?onload=init',
             'http://www.youtube.com/iframe_api',
-            'assets/js/*.min.js',
-            'spec/*.spec.js'
+            '../libs/jquery/jquery-1.11.0.js',
+            '../assets/js/*.min.js',
+            '*.spec.js'
         ],
 
 

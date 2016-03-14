@@ -42,7 +42,7 @@ describe('YoutubeApp', function() {
     // );
 
     describe('Routes', function() {
-        it('Should change route when type /login', inject(
+        it('Should change route when type /login', angular.mock.inject(
             function($locationProvider) {
                 $locationProvider.html5Mode(false);
             },
@@ -61,9 +61,12 @@ describe('YoutubeApp', function() {
 
     describe('View', function() {
         it('Should have a input called inputSearch', function() {
-            // expect(element('inputSearch')).toBeDefined();
-            // expect(element('.inputSearch')).toBeDefined();
-            // expect(element('#inputSearch')).toBeDefined();
+            expect(angular.element('#inputSearch')).toBeDefined();
+
+
+            // expect(angular.element('#inputSearch')).toBeDefined();
+            // expect(angular.element('inputSearch')).toBeDefined();
+            // expect(angular.element('.inputSearch')).toBeDefined();
         });
 
         it('Should search the text "Dogs" ', function() {
