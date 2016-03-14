@@ -5,6 +5,8 @@
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.7",
-    "karma-ng-scenario": "^0.1.0"
+    "karma-ng-scenario": "^0.1.0",
+    "karma-requirejs": "^0.2.5",
+    "requirejs": "^2.1.22"
   }
 }
